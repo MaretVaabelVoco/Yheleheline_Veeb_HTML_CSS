@@ -1,3 +1,72 @@
+body {
+  background-color: lightpink;
+  margin: 0;
+}
+
+/* see osa on header */
+
+.header {
+  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: end;
+  padding: 20px;
+}
+
+.main-title {
+  font-size: 3rem;
+  width: max-content;
+}
+
+@media (max-width: 767px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .main-title {
+    font-size: 2rem;
+  }
+}
+
+.navigation {
+  background-color: aliceblue;
+  font-size: 24px;
+}
+.navigation a:focus {
+  background-color: aqua;
+}
+.navigation a:hover {
+  background-color: bisque;
+}
+.navigation a:active {
+  background-color: darksalmon;
+}
+
+/* see osa on main */
+main {
+  background-color: aqua;
+  padding: 30px;
+  display: grid;
+}
+section {
+  min-height: 400px;
+}
+
+#sissejuhatus {
+  background-color: bisque;
+}
+
+#teooria {
+  background-color: aquamarine;
+}
+
+#kontakt {
+  background-color: coral;
+  display: grid;
+}
+
 img {
   width: 150px;
   height: 150px;
@@ -11,6 +80,7 @@ img {
   font-size: 24px;
 }
 .card {
+  background-color: beige;
   display: grid;
   grid-template-columns: max-content auto;
   border: 1px solid gray;
@@ -19,4 +89,5 @@ img {
   grid-gap: 20px;
   width: max-content;
   align-items: center;
+  justify-self: center;
 }
